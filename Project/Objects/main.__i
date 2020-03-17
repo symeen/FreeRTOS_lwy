@@ -1,0 +1,6 @@
+--c99 --gnu -c --cpu Cortex-M3 --li -g -O0 --apcs=interwork --split_sections -I ..\User -I ..\freertos\include -I ..\freertos\portable\RVDS\ARM_CM3
+-I.\RTE\_Target_1
+-IF:\application\MDK529\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+-IF:\application\MDK529\ARM\CMSIS\5.6.0\Device\ARM\ARMCM3\Include
+-D__UVISION_VERSION="529" -D_RTE_ -DARMCM3
+-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d "..\User\main.c"
